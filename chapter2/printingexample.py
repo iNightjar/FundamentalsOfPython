@@ -1,0 +1,7 @@
+print('a', end='')
+print('b', end='')
+print('c', end='')
+print()
+print('x')
+print('y')
+print('z')
