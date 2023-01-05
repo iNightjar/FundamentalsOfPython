@@ -16,7 +16,7 @@ for row in range(height):
 # 3. number of stars on right side of tree
 # #
     # = current row value
-for count in range(2*row + 1):
-    print(end='*')
+    for count in range(2*row + 1):
+        print(end='*')
 # Move cursor down to next line
-print()
+    print()
