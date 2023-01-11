@@ -1,7 +1,7 @@
-from time import clock
+from time import process_time
 
 print("Your name : ", end='')
-start_time = clock()
+start_time = process_time()
 name = input()
-elapsed = clock - start_time
+elapsed = process_time() - start_time
 print(name, " i took you ", elapsed, " seconds to respond. ")
