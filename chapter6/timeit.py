@@ -1,4 +1,5 @@
-from time import process_time
+from time import process_time  # clock() function is now deprecated
+
 
 print("Your name : ", end='')
 start_time = process_time()
