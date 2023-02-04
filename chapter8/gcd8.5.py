@@ -7,7 +7,9 @@ def gcd(minn, num):
     if num == 0:
         return minn
     else:
-        return gcd(num, minn % num)
+        result =  gcd(num, minn % num)
+        print(result)
+        return result
 
 
 def iterative_gcd(number1, number2):
