@@ -7,10 +7,8 @@ def gcd(minn, num):
     if num == 0:
         return minn
     else:
-        result =  gcd(num, minn % num)
-        print(result)
-        return result
-
+        print(gcd(num, minn % num))
+        return gcd(num, minn % num)
 
 def iterative_gcd(number1, number2):
     """uses a naive algorithms to compute the greatest commin divisor
@@ -30,7 +28,7 @@ def iterative_gcd(number1, number2):
 def main():
     """try out the gcd function"""
     firstNumber, secondNumber = int(input("Enter number please: ")), int(
-        input("Enter number please"))
+        input("Enter number please: "))
     for number1 in range(1, firstNumber):
         for number2 in range(1, secondNumber):
             print("gcd of ", number1, " and ", number2,
