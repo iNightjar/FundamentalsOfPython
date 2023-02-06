@@ -1,17 +1,17 @@
 """contains the definition of the is_prime function"""
 from math import sqrt
 
+
 def is_prime(number):
     """Returns True if the nonnegative integer number is prime; otherwise, returns false"""
     trail_factor = 2
-    root= sqrt(number)
-
+    root = sqrt(number)
 
     while trail_factor <= root:
-        if number % trail_factor == 0 :
+        if number % trail_factor == 0:
             return False
-        trail_factor  += 1
+        trail_factor += 1
 
-    return True
+    return True    # Tried them  all, must be prime
 
-print(is_prime(22))
+# print(is_prime(22))
