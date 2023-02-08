@@ -22,6 +22,7 @@ def main():
     print(add(2, 3))
     print(multiply(2, 3))
     print(evaluate(add, 2, 3))
+    print(evaluate(add, '2', '3'))
     print(evaluate(multiply, 2, 3))
 
 
