@@ -1,0 +1,22 @@
+{
+    "eventData": {
+        "object": "Test",
+        "entry": [
+            {
+                "time": 1,
+                "id": "2",
+                "messaging": [
+                    {
+                        "sender": { "id": "2" },
+                        "recipient": { "id": "1" },
+                        "timestamp": 1,
+                        "message": {
+                            "mid": "1",
+                            "is_deleted": true
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
