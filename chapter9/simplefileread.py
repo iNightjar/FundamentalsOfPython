@@ -1,4 +1,4 @@
-f = open('data.txt')
+f = open('data.txt')  # default mode is R > read
 for line in f:
     print(line.strip())
 f.close()
