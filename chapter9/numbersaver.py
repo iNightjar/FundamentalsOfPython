@@ -26,7 +26,7 @@ def store_data(file):
 
 def main():
     """
-    Interactive function that allows thee user to create or consume files of numbers. 
+    Interactive function that allows the user to create or consume files of numbers. 
     """
     done = False
     while not done:
