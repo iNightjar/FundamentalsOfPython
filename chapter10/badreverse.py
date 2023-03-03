@@ -12,9 +12,10 @@ def make_list():
     return result
 
 def main():
+    # hello inside the main function
     revers = make_list()
     # print the list in reverse
-    for iterator in range(len(revers), -1, -1):
+    for iterator in range(len(revers) -1, -1, -1):
         print(revers[iterator], end=' ')
     print()
 
