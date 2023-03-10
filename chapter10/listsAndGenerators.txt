@@ -1,0 +1,25 @@
+We now have seen two ways of expressing a sequence of values: generators and lists. How are they similar?
+Generators and lists share the following characteristics:
+
+• Both generators and lists represent a sequence of values. This means the order of the values matters.
+There is a first element and a last element in a sequence. Except for the first element in the sequence,
+every element has a predecessor. Except for the last element, every element in the sequence has a
+successor.
+• We can iterate over both generators and lists using the for statement.
+
+
+
+How are generators and lists different? Generators and lists differ in the following ways:
+
+• The elements in a list persist for the life of the list, but the elements produced by a generator become
+available in turn as the iteration with the generator progresses. Once the iteration moves on from the
+current element, previous elements are unavailable from that particular generator object.
+• The memory required for a list generally will be greater than that for a generator that can produce the
+same sequence of values. This is because the generator manages only one element at a time, while a
+list must store simultaneously all the elements in the sequence.
+• Lists provide random access. This means any value at any position in the list is available at any time.
+A generator serves up values one at a time, in order from the first to the last. We cannot obtain the ith
+element from a generator without first requesting all the elements that come before it. Any element
+prior to the generator’s current element is no longer available.
+• Lists support forward and backward traversal. Generators provide only forward traversal (reversed,
+for example, does not work with a generator object).
