@@ -23,6 +23,8 @@ my_list[0] = 9
 # Modify the list
 print('The list:', my_list)
 print('Try to modify the first element in the list . . .')
-my_tuple[0] = 9
+# my_tuple[0] = 9 # tuples are ammutable
 # Is tuple modification possible?
+my_list[3] = 5
 print('The tuple:', my_tuple)
+print("my new list index 4: ", my_list[4])
