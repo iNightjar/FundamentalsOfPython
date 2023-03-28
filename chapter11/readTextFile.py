@@ -1,12 +1,12 @@
 def readFile(filename):
     """read the comma-separated integer data from the text file
     named filename and return the data in a list"""
-    result = [] # list initially empty
+    resultForTextFile = [] # list initially empty
     with open(filename, "r") as dataFile:
         for line in dataFile:
             # remove any trailing spaces, comma, and newline
             result += [int(x.strip()) for x in line.rstrip(" ,\n").split(",")]  
-    return result
+    return resultForTextFile
 
 def main():
     list = readFile("Monitor.data")
