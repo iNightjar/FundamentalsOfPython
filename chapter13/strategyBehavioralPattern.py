@@ -5,9 +5,11 @@ class strategy:
     def execute(self, firstVar, secondVar):
         pass
 
+
 class add(strategy):
     def execute(self, firstVar, secondVar):
         return firstVar + secondVar
+
 
 class subtract(strategy):
     def execute(self, firstVar, secondVar):
@@ -17,6 +19,7 @@ class subtract(strategy):
 class multiply(strategy):
     def execute(self, firstVar, secondVar):
         return firstVar * secondVar
+
 
 class Calculator:
     def __init__(self, strategy) -> None:
@@ -28,20 +31,17 @@ class Calculator:
 
 add_strategy = add()
 calculator = Calculator(add_strategy)
-result = calculator.execute_strategy(2,3)
-print("Add Result: ", result) # result = 6
+result = calculator.execute_strategy(2, 3)
+print("Add Result: ", result)  # result = 6
 
 
 subtract_strategy = subtract()
 calculator = Calculator(subtract_strategy)
-result = calculator.execute_strategy(5,2)
-print("Subtract Result: ", result) # result = 3
+result = calculator.execute_strategy(5, 2)
+print("Subtract Result: ", result)  # result = 3
 
 
 multiply_strategy = multiply()
 calculator = Calculator(multiply_strategy)
-result = calculator.execute_strategy(1,2)
-print("Multiply Result: ", result) # result = 2
-
-
-
+result = calculator.execute_strategy(1, 2)
+print("Multiply Result: ", result)  # result = 2

@@ -32,15 +32,16 @@ class observer:
     def update(self):
         pass
 
+
 class concreteObserver(observer):
     def __init__(self, subject) -> None:
         self._subject = subject
         self._subject.attach(self)
 
-
     def update(self):
         print("Observer's state has been updated to : {}".format(self._subject.state))
-    
+
+
 if __name__ == "__main__":
     subject = concreteSubject()
     observer1 = concreteObserver(subject)
